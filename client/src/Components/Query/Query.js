@@ -1,10 +1,18 @@
 import React from 'react';
+import './Query.scss';
 
 const Query = (props) => {
     return(
         <>
-            <h1>Or Be a Domain Expert</h1>
-            <p>Tell us a bit about where you’re going and we’ll show you related and appropriate topics.</p>
+            <section className="query__title">
+                Be an Expert
+            </section>
+            <div className="query__subTitle">
+                Going to a networking event? Tell us about it and we’ll show you related topics.
+            </div>
+            
         </>
     )
 }
+
+export default Query;

@@ -3,6 +3,7 @@ import './SideVideo.scss';
 import {Link} from 'react-router-dom';
 
 export default function SideVideo(props) {
+    console.log('SideVideo', props);
     return (
         <div>
             <Link to={`/${props.id}`}>

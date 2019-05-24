@@ -4,6 +4,7 @@ import Header from './Components/Header/Header';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import MainVideo from './Components/MainVideo/MainVideo';
 import Main from './Components/Main/Main';
+import Query from './Components/Query/Query';
 
 function App() {
   return (

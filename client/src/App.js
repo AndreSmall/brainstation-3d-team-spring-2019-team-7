@@ -1,25 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from './Components/Header/Header';
+import MainVideo from './Components/MainVideo/MainVideo';
+import Main from './Components/Main/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <a
-          className="App-link"
-          href={`http://localhost:8080/ping`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Local Express Server ping
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <Main />
     </div>
   );
 }

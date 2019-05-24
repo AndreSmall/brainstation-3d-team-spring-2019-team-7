@@ -1,10 +1,11 @@
-import React from 'react';
-import './MainVideo.scss';
+import React, {Component} from 'react';
 
-export default function MainVideo() {
-    return (
-        <div>
-            
-        </div>
-    )
+export default class MainVideo extends Component{
+    render(){
+        return (
+            <>
+                <video src="https://download.ted.com/talks/AmericaFerrera_2019.mp4" controls></video>
+            </>
+        )
+    }
 }

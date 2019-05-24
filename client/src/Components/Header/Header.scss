@@ -1,56 +1,68 @@
 @import '../variable.scss';
+@import '../mixin.scss';
 
 .header {
+    width: 1280px;
+    height: 677px;
+    object-fit: contain;
+
+    &__logo {
+        width: 1280px;
+        height: 677px;
+        object-fit: contain;
+        margin: 64.8px 1005px 153.2px 144px;
+    }
 
     &__title {
-        width: 648px;
-        height: 158px;
+        width: 639px;
+        height: 164px;
         opacity: 0.87;
-        // font-family: 'Roboto';
+        font-family: Avenir;
         font-size: 60px;
-        font-weight: 300;
+        font-weight: 900;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
         letter-spacing: -0.5px;
-        color: #000000;
-        margin: 177px 488px 28px 144px;
+        color: #ffffff;
+        margin: 266px 498px 13px 143px;
     }
 
     &__subTitle {
-        width: 400px;
-        height: 56px;
-        // font-family: 'Roboto';
-        font-size: 18px;
+        width: 537px;
+        height: 72px;
+        font-family: Roboto;
+        font-size: 24px;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
-        line-height: 1.56;
-        letter-spacing: 0.5px;
-        color: #000000;
-        margin: 0 736px 44px 144px;
+        line-height: 1.5;
+        letter-spacing: 0.7px;
+        color: #ffffff;
+        margin: 0 600px 28px 143px;
     }
 
     &__button {
-        width: 136px;
-        height: 35px;
+        width: 153px;
+        height: 49px;
         border-radius: 6px;
-        background-color: #919191;
+        background-color: $nice_blue;
+        margin: 0 991px 85px 136px;
     }
 
     &__buttonText {
-        width: 104px;
+        width: 103px;
         height: 19px;
-        // font-family: 'Roboto';
+        font-family: Roboto;
         font-size: 14px;
-        font-weight: normal;
+        font-weight: 500;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
         letter-spacing: 1.3px;
         text-align: center;
         color: #ffffff;
-        margin: 0;
         text-transform: uppercase;
+        padding: 14px 25px 16px 25px;
     }
 }

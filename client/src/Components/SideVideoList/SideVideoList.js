@@ -5,7 +5,7 @@ export default class SideVideoList extends Component{
     render(){
         return (
             <>
-                {this.props.videoList.map(video => <SideVideo url={video.url}/>)}
+                {this.props.videoList.map(video => <SideVideo id={video.id} url={video.url}/>)}
             </>
         )
     }

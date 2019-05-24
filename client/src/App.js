@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from './Components/Header/Header';
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import MainVideo from './Components/MainVideo/MainVideo';
+import Main from './Components/Main/Main';
+import Query from './Components/Query/Query';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <a
-          className="App-link"
-          href={`http://localhost:8080/ping`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Local Express Server ping
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <Header />
+      <Switch>
+        <Route exact path="/" component={Main}/>
+        <Route path="/:id" render={(props => <Main {...props} />)} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
